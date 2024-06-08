@@ -35,6 +35,7 @@
 
         function submitForm() {
             var college = document.getElementById("colleges").value;
+            var logo = document.getElementById("logoInput").files[0];
             var session = document.getElementById("session").value;
             var yearSem = document.getElementById("yearSem").value;
             var subject = document.getElementById("subject").value;
@@ -48,7 +49,17 @@
             sessionStorage.setItem("teacher", teacher);
             sessionStorage.setItem("name", name);
             sessionStorage.setItem("enrollment", enrollment);
-            window.location.href = "format.html";
+
+            if (logo) {
+                var reader = new FileReader();
+                reader.onloadend = function() {
+                    sessionStorage.setItem("logo", reader.result);
+                    window.location.href = "format.html";
+                }
+                reader.readAsDataURL(logo);
+            } else {
+                window.location.href = "format.html";
+            }
         }
 
         function samplePdf() {
