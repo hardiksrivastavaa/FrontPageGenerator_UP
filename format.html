@@ -32,14 +32,5 @@
   </div>
   <button id="button" onclick="convertToPDF()">Download PDF</button>
   <script src="format.js"></script>
-  <script>
-    function convertToPDF() {
-    const element = document.getElementById('content'); 
-    html2pdf()
-      .from(element)
-      .save('output.pdf'); // Save the PDF with the given filename
-      document.getElementById('content').style.border = "none";
-  }
-  </script>
 </body>
 </html>
