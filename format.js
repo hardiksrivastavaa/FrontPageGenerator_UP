@@ -1,6 +1,13 @@
 var college = sessionStorage.getItem("college");
 document.getElementById("college").textContent = college;
 
+var logo = sessionStorage.getItem("logo");
+if (logo) {
+    document.getElementById("logo").src = logo;
+} else {
+    document.getElementById("logo").style.display = 'none';
+}
+
 var session = sessionStorage.getItem("session");
 document.getElementById("session").textContent = `Session : ${session}`;
 
@@ -21,4 +28,3 @@ document.getElementById("stdname").textContent = stdname;
 
 var enrollment = sessionStorage.getItem("enrollment");
 document.getElementById("enrollment").textContent = enrollment;
-
