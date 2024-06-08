@@ -41,7 +41,7 @@
             var subject = document.getElementById("subject").value;
             var teacher = document.getElementById("teacher").value;
             var branch = document.getElementById("branch").value;
-            var name = document.getElementById("name").value;
+            var stdname = document.getElementById("stdname").value;
             var enrollment = document.getElementById("enrollment").value;
 
         // Check if any field is empty
