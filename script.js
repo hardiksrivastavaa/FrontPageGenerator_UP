@@ -56,7 +56,7 @@
             sessionStorage.setItem("yearSem", yearSem);
             sessionStorage.setItem("subject", subject);
             sessionStorage.setItem("teacher", teacher);
-            sessionStorage.setItem("name", name);
+            sessionStorage.setItem("stdname", stdname);
             sessionStorage.setItem("enrollment", enrollment);
             sessionStorage.setItem("branch", branch);
 
