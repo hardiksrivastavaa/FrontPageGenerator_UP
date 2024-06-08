@@ -1,0 +1,45 @@
+*, body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    margin : 15px;
+    
+}
+
+#frontPageFrom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(129, 224, 224);
+}
+
+.formelement {
+    margin-top: 10px;
+    padding: 6px;
+    font-size: large;
+    border: 1px solid;
+    border-radius: 6px;
+    background-color: antiquewhite;
+}
+
+.btn-container { 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn { 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: center;
+    cursor: pointer;
+    padding: 10px;
+    font-size: larger;
+    border-radius: 10px;
+}
