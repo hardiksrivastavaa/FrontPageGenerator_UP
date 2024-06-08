@@ -5,7 +5,6 @@ var logo = sessionStorage.getItem("logo");
 if (logo) {
     document.getElementById("logo").src = logo;
 } else {
-    // document.getElementById("logo").style.display = 'none';
     document.getElementById("logo").src = "logo.jpeg";}
 
 var session = sessionStorage.getItem("session");
