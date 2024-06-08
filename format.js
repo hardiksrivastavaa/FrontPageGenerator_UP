@@ -22,13 +22,7 @@ document.getElementById("yearSem").textContent = yearSem;
 var teacher = sessionStorage.getItem("teacher");
 document.getElementById("teacher").textContent = teacher;
 
-var    function convertToPDF() {
-    const element = document.getElementById('content'); 
-    html2pdf()
-      .from(element)
-      .save('output.pdf'); // Save the PDF with the given filename
-      document.getElementById('content').style.border = "none";
-  }stdname = sessionStorage.getItem("name");
+var stdname = sessionStorage.getItem("name");
 document.getElementById("stdname").textContent = stdname;
 
 var enrollment = sessionStorage.getItem("enrollment");
