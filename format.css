@@ -1,0 +1,36 @@
+#FrontPage {
+    text-align: center;
+}
+
+#college {
+    font-size: xx-large;
+    color: darkblue;
+}
+
+#session {
+    font-size: larger;
+}
+
+#subject {
+    color: red;
+}
+
+#branch {
+
+}
+
+#yearSem {
+
+}
+
+#stdname {
+    text-align: right;
+}
+
+#teacher {
+    text-align: left;
+}
+
+#enrollment {
+    text-align: right;
+}
