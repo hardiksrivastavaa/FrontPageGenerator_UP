@@ -42,6 +42,14 @@
             var teacher = document.getElementById("teacher").value;
             var name = document.getElementById("name").value;
             var enrollment = document.getElementById("enrollment").value;
+
+        // Check if any field is empty
+    if (!college || !logo || !session || !yearSem || !subject || !teacher || !name || !enrollment) {
+        alert("Please fill in all fields!!");
+        return; 
+        // Stop further execution
+    }
+
             sessionStorage.setItem("college", college);
             sessionStorage.setItem("session", session);
             sessionStorage.setItem("yearSem", yearSem);
