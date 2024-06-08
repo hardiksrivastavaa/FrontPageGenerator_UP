@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download Front Page</title>
     <link rel="stylesheet" href="format.css">    
 </head>
-
 <body>
     <div id="FrontPage">
         <h1 id="college"></h1>
+        <img id="logo" alt="logo">
         <h4 id="session"></h4>
         <h3 id="subject"></h3>
         <h4 id="branch"></h4>
@@ -20,7 +19,26 @@
         <h5 id="enrollment"></h5>
     </div>
 
+    <button id="downloadBtn" onclick="downloadPDF()">Download PDF</button>
+
     <script src="format.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script>
+        function downloadPDF() {
+            var { jsPDF } = window.jspdf;
+            
+            const frontPageDiv = document.getElementById('FrontPage');
+
+            html2canvas(frontPageDiv).then(canvas => {
+                const imgData = canvas.toDataURL('image/png');
+                const pdf = new jsPDF();
+                const imgWidth = 210; // A4 size
+                const imgHeight = canvas.height * imgWidth / canvas.width;
+                pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+                pdf.save('frontpage.pdf');
+            });
+        }
+    </script>
 </body>
 </html>
-
