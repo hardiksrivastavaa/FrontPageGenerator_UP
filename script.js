@@ -45,7 +45,7 @@
             var enrollment = document.getElementById("enrollment").value;
 
         // Check if any field is empty
-    if (!college || !logo || !session || !yearSem || !subject || !teacher || !name || !enrollment || !branch) {
+    if (!college || !logo || !session || !yearSem || !subject || !teacher || !stdname || !enrollment || !branch) {
         alert("Please fill in all fields!!");
         return; 
         // Stop further execution
