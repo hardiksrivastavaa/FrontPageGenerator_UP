@@ -24,7 +24,7 @@ var teacher = sessionStorage.getItem("teacher");
 document.getElementById("teacher").textContent = teacher;
 
 var stdname = sessionStorage.getItem("stdname");
-document.getElementById("student").textContent = stdname;
+document.getElementById("stdname").textContent = stdname;
 
 var enrollment = sessionStorage.getItem("enrollment");
 document.getElementById("enrollment").textContent = enrollment;
