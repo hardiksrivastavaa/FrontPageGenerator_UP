@@ -2,136 +2,135 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Front Page Creator</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Page Generator</title>
+    <link rel="stylesheet" href="style.css">    
 </head>
 
 <body>
+    <form id="frontPageFrom">
+        <h1>Front Page Generator</h1>
 
-  <form class="main">
+        <select name=" districts" id="districts" class="formelement" required>
+            <option value="">Select District</option>
+            <option value="Agra">Agra</option>
+            <option value="Aligarh">Aligarh</option>
+            <option value="Allahabad">Allahabad</option>
+            <option value="Ambedkar Nagar">Ambedkar Nagar</option>
+            <option value="Amethi">Amethi</option>
+            <option value="Amroha">Amroha</option>
+            <option value="Auraiya">Auraiya</option>
+            <option value="Azamgarh">Azamgarh</option>
+            <option value="Baghpat">Baghpat</option>
+            <option value="Bahraich">Bahraich</option>
+            <option value="Ballia">Ballia</option>
+            <option value="Balrampur">Balrampur</option>
+            <option value="Banda">Banda</option>
+            <option value="Barabanki">Barabanki</option>
+            <option value="Bareilly">Bareilly</option>
+            <option value="Basti">Basti</option>
+            <option value="Bhadohi">Bhadohi</option>
+            <option value="Bijnor">Bijnor</option>
+            <option value="Budaun">Budaun</option>
+            <option value="Bulandshahr">Bulandshahr</option>
+            <option value="Chandauli">Chandauli</option>
+            <option value="Chitrakoot">Chitrakoot</option>
+            <option value="Deoria">Deoria</option>
+            <option value="Etah">Etah</option>
+            <option value="Etawah">Etawah</option>
+            <option value="Faizabad">Faizabad</option>
+            <option value="Farrukhabad">Farrukhabad</option>
+            <option value="Fatehpur">Fatehpur</option>
+            <option value="Firozabad">Firozabad</option>
+            <option value="Gautam Buddha Nagar">Gautam Buddha Nagar</option>
+            <option value="Ghaziabad">Ghaziabad</option>
+            <option value="Ghazipur">Ghazipur</option>
+            <option value="Gonda">Gonda</option>
+            <option value="Gorakhpur">Gorakhpur</option>
+            <option value="Hamirpur">Hamirpur</option>
+            <option value="Hapur">Hapur</option>
+            <option value="Hardoi">Hardoi</option>
+            <option value="Hathras">Hathras</option>
+            <option value="Jalaun">Jalaun</option>
+            <option value="Jaunpur">Jaunpur</option>
+            <option value="Jhansi">Jhansi</option>
+            <option value="Kannauj">Kannauj</option>
+            <option value="Kanpur Dehat">Kanpur Dehat</option>
+            <option value="Kanpur Nagar">Kanpur Nagar</option>
+            <option value="Kasganj">Kasganj</option>
+            <option value="Kaushambi">Kaushambi</option>
+            <option value="Kushinagar">Kushinagar</option>
+            <option value="Lakhimpur Kheri">Lakhimpur Kheri</option>
+            <option value="Lalitpur">Lalitpur</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Maharajganj">Maharajganj</option>
+            <option value="Mahoba">Mahoba</option>
+            <option value="Mainpuri">Mainpuri</option>
+            <option value="Mathura">Mathura</option>
+            <option value="Meerut">Meerut</option>
+            <option value="Mirzapur">Mirzapur</option>
+            <option value="Moradabad">Moradabad</option>
+            <option value="Muzaffarnagar">Muzaffarnagar</option>
+            <option value="Pilibhit">Pilibhit</option>
+            <option value="Prayagraj">Prayagraj</option>
+            <option value="Raebareli">Raebareli</option>
+            <option value="Rampur">Rampur</option>
+            <option value="Saharanpur">Saharanpur</option>
+            <option value="Sant Kabir Nagar">Sant Kabir Nagar</option>
+            <option value="Sant Ravidas Nagar (Bhadohi)">Sant Ravidas Nagar (Bhadohi)</option>
+            <option value="Shahjahanpur">Shahjahanpur</option>
+            <option value="Shamli">Shamli</option>
+            <option value="Shravasti">Shravasti</option>
+            <option value="Siddharthnagar">Siddharthnagar</option>
+            <option value="Sitapur">Sitapur</option>
+            <option value="Sonbhadra">Sonbhadra</option>
+            <option value="Sultanpur">Sultanpur</option>
+            <option value="Unnao">Unnao</option>
+            <option value="Varanasi">Varanasi</option>
+        </select>
 
-    <h1>Front Page Generator</h1>
+        <select name="college" id="colleges" class="formelement" required>
+            <option value="">Select College</option>
+            <!-- College options will be populated dynamically based on the selected district -->
+        </select>
 
-      <select name= "districts" id="districts">
-      <option value="Agra">Agra</option>
-      <option value="Aligarh">Aligarh</option>
-      <option value="Allahabad">Allahabad</option>
-      <option value="Ambedkar Nagar">Ambedkar Nagar</option>
-      <option value="Amethi">Amethi</option>
-      <option value="Amroha">Amroha</option>
-      <option value="Auraiya">Auraiya</option>
-      <option value="Azamgarh">Azamgarh</option>
-      <option value="Baghpat">Baghpat</option>
-      <option value="Bahraich">Bahraich</option>
-      <option value="Ballia">Ballia</option>
-      <option value="Balrampur">Balrampur</option>
-      <option value="Banda">Banda</option>
-      <option value="Barabanki">Barabanki</option>
-      <option value="Bareilly">Bareilly</option>
-      <option value="Basti">Basti</option>
-      <option value="Bhadohi">Bhadohi</option>
-      <option value="Bijnor">Bijnor</option>
-      <option value="Budaun">Budaun</option>
-      <option value="Bulandshahr">Bulandshahr</option>
-      <option value="Chandauli">Chandauli</option>
-      <option value="Chitrakoot">Chitrakoot</option>
-      <option value="Deoria">Deoria</option>
-      <option value="Etah">Etah</option>
-      <option value="Etawah">Etawah</option>
-      <option value="Faizabad">Faizabad</option>
-      <option value="Farrukhabad">Farrukhabad</option>
-      <option value="Fatehpur">Fatehpur</option>
-      <option value="Firozabad">Firozabad</option>
-      <option value="Gautam Buddha Nagar">Gautam Buddha Nagar</option>
-      <option value="Ghaziabad">Ghaziabad</option>
-      <option value="Ghazipur">Ghazipur</option>
-      <option value="Gonda">Gonda</option>
-      <option value="Gorakhpur">Gorakhpur</option>
-      <option value="Hamirpur">Hamirpur</option>
-      <option value="Hapur">Hapur</option>
-      <option value="Hardoi">Hardoi</option>
-      <option value="Hathras">Hathras</option>
-      <option value="Jalaun">Jalaun</option>
-      <option value="Jaunpur">Jaunpur</option>
-      <option value="Jhansi">Jhansi</option>
-      <option value="Kannauj">Kannauj</option>
-      <option value="Kanpur Dehat">Kanpur Dehat</option>
-      <option value="Kanpur Nagar">Kanpur Nagar</option>
-      <option value="Kasganj">Kasganj</option>
-      <option value="Kaushambi">Kaushambi</option>
-      <option value="Kushinagar">Kushinagar</option>
-      <option value="Lakhimpur Kheri">Lakhimpur Kheri</option>
-      <option value="Lalitpur">Lalitpur</option>
-      <option value="Lucknow">Lucknow</option>
-      <option value="Maharajganj">Maharajganj</option>
-      <option value="Mahoba">Mahoba</option>
-      <option value="Mainpuri">Mainpuri</option>
-      <option value="Mathura">Mathura</option>
-      <option value="Meerut">Meerut</option>
-      <option value="Mirzapur">Mirzapur</option>
-      <option value="Moradabad">Moradabad</option>
-      <option value="Muzaffarnagar">Muzaffarnagar</option>
-      <option value="Pilibhit">Pilibhit</option>
-      <option value="Prayagraj">Prayagraj</option>
-      <option value="Raebareli">Raebareli</option>
-      <option value="Rampur">Rampur</option>
-      <option value="Saharanpur">Saharanpur</option>
-      <option value="Sant Kabir Nagar">Sant Kabir Nagar</option>
-      <option value="Sant Ravidas Nagar (Bhadohi)">Sant Ravidas Nagar (Bhadohi)</option>
-      <option value="Shahjahanpur">Shahjahanpur</option>
-      <option value="Shamli">Shamli</option>
-      <option value="Shravasti">Shravasti</option>
-      <option value="Siddharthnagar">Siddharthnagar</option>
-      <option value="Sitapur">Sitapur</option>
-      <option value="Sonbhadra">Sonbhadra</option>
-      <option value="Sultanpur">Sultanpur</option>
-      <option value="Unnao">Unnao</option>
-      <option value="Varanasi">Varanasi</option>
-      </select>
+        <select name="session" id="session" class="formelement" required>
+            <option value="">Select Session</option>
+            <option value="2022-23">2022-23</option>
+            <option value="2023-24">2023-24</option>
+            <option value="2024-25">2024-25</option>
+            <option value="2025-26">2025-26</option>
+            <option value="2026-27">2026-27</option>
+            <option value="2027-28">2027-28</option>
+            <option value="2028-29">2028-29</option>
+            <option value="2029-30">2029-30</option>
+        </select>
 
-      <select name="colleges" id="colleges">
-        <!-- This dropdown will be populated dynamically based on the selected district -->
-      </select>
+        <select name="yearSem" id="yearSem" class="formelement" required>
+            <option value="">Select Year & Semester</option>
+            <option value="1st Year - 1st Semester">1st Year - 1st Semester</option>
+            <option value="1st Year - 2nd Semester">1st Year - 2nd Semester</option>
+            <option value="2nd Year - 3rd Semester">2nd Year - 3rd Semester</option>
+            <option value="2nd Year - 4th Semester">2nd Year - 4th Semester</option>
+            <option value="3rd Year - 5th Semester">3rd Year - 5th Semester</option>
+            <option value="3rd Year - 6th Semester">3rd Year - 6th Semester</option>
+        </select>
 
-      <!-- Input field for choosing the logo -->
-      <input type="file" name="logo" id="logoInput">
+     <input type="text" name="branch" id="branch" placeholder="Enter branch Name" class="formelement" required />
+     <input type="text" name="subject" id="subject" placeholder="Enter Subject Name" class="formelement" required />
+     <input type="text" name="teacher" id="teacher" placeholder="Enter Teacher Name" class="formelement" required />
+     <input type="text" name="name" id="name" placeholder="Enter Your Name" class="formelement" required />
+     <input type="text" name="enrollment" id="enrollment" class="formelement" placeholder="Enter Your Enrollment No" />
 
-      <!-- Placeholder image -->
-      <img src="" alt="Choose logo" id="logo" style="display: none;">
+     <div class="btn-container">
+        <button type="button" class="btn" id="generatebtn"  onclick="submitForm()">Generate Front Page</button>
+        <button type="button" class="btn" id="samplebtn" onclick="samplePdf()">Sample Front Page</button>
+     </div>
 
-      <select name="session" id="session" required>
-        <option value="select">Select Session</option>
-        <option value="2022-23">2022-23</option>
-        <option value="2023-24">2023-24</option>
-        <option value="2024-25">2024-25</option>
-        <option value="2025-26">2025-26</option>
-        <option value="2026-27">2026-27</option>
-        <option value="2027-28">2027-28</option>
-        <option value="2028-29">2028-29</option>
-        <option value="2029-30">2029-30</option>
-      </select>
-
-      <select name="yearSem" id="yearSem" required>
-        <option value="1-1">1st Year - 1st Semester</option>
-        <option value="1-2">1st Year - 2nd Semester</option>
-        <option value="2-3">2nd Year - 3rd Semester</option>
-        <option value="2-4">2nd Year - 4th Semester</option>
-        <option value="3-5">3rd Year - 5th Semester</option>
-        <option value="3-6">3rd Year - 6th Semester</option>
-      </select>
-
-      <input type="text" id="subject" placeholder="Enter Subject Name" required />
-      <input type="text" id="teacher" placeholder="Enter Teacher Name" required />
-      <input type="text" id="name" placeholder="Enter Your Name" required />
-      <input type="text" id="enrollment" placeholder="Enter Your Enrollement No." />
-      <input type="submit" value="Generate Front Page" class="submit-button" onclick="window.location.href = 'format.html';" required />
-
-
-  </form>
-
-  <script src="script.js"></script>
+    </form>
+    <script src="colleges.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
