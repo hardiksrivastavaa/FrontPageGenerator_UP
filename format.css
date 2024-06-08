@@ -1,3 +1,7 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 #FrontPage {
     text-align: center;
 }
@@ -5,6 +9,11 @@
 #college {
     font-size: xx-large;
     color: darkblue;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
 }
 
 #session {
