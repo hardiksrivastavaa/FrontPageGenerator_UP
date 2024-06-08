@@ -43,3 +43,95 @@ img {
 #enrollment {
     text-align: right;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.FrontPage{
+    width: 793px;
+    height: 1122px;
+    background-color: #fff;
+    color: #111;
+    text-align: center;
+    padding: 3vw 0;
+    position: relative;
+    border: 10px solid red;
+}
+#college{
+    font-size: 3.2vw;
+    color: #005659;
+    font-family: 'PT Serif', serif;
+    margin-bottom: 1.5vw;
+}
+#logo{
+    height: 46vh;
+    width: 35vw;
+    margin-bottom: 2vw;
+}
+img{
+    object-fit: contain;
+    object-position: center;
+}
+#session{
+    font-family: 'PT Serif', serif;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+#subject{
+    font-family: 'PT Serif', serif;
+    font-size: 3vw;
+    color: #005659;
+    margin-bottom: 2.2vw;
+}
+#branch{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 2.2vw;
+}
+#yearSem{
+    font-size: 2.2vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 2vw;
+    margin-top: 10vw;
+}
+.left{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 19vh;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 400;
+}
+.right{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 19vh;
+    justify-content: flex-start;
+    gap: 0.1vw;
+    
+}
+.bottom h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5vw;
+}
