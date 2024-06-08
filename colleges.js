@@ -77,7 +77,7 @@ const districtData = {
         "Shri Kashi Chandra Dev Yadav Pravidhik Shikshan Sansthan",
         "Swami Sahajanand Polytechnic",
     ],
-    Bagpat: [
+    Baghpat: [
         "Digamber Jain Polytechnic Baraut",
         "Gayatri Devi Institute of Management and Technology",
         "Government Polytechnic Kirthal Chaprauli Bagphat",
