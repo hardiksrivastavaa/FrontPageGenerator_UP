@@ -23,5 +23,8 @@ document.getElementById("yearSem").textContent = yearSem;
 var teacher = sessionStorage.getItem("teacher");
 document.getElementById("teacher").textContent = teacher;
 
+var stdname = sessionStorage.getItem("name");
+document.getElementById("stdname").textContent = stdname;
+
 var enrollment = sessionStorage.getItem("enrollment");
 document.getElementById("enrollment").textContent = enrollment;
