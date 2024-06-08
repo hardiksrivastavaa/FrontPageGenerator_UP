@@ -13,6 +13,7 @@ body{
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    flex-direction :column;
 }
 .FrontPage{
     width: 793px;
