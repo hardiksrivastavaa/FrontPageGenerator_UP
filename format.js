@@ -27,3 +27,11 @@ document.getElementById("stdname").textContent = stdname;
 
 var enrollment = sessionStorage.getItem("enrollment");
 document.getElementById("enrollment").textContent = enrollment;
+//Convert into pdf
+    function convertToPDF() {
+    const element = document.getElementById('content'); 
+    html2pdf()
+      .from(element)
+      .save('output.pdf'); // Save the PDF with the given filename
+      document.getElementById('content').style.border = "none";
+  }
