@@ -40,11 +40,12 @@
             var yearSem = document.getElementById("yearSem").value;
             var subject = document.getElementById("subject").value;
             var teacher = document.getElementById("teacher").value;
+            var branch = document.getElementById("branch").value;
             var name = document.getElementById("name").value;
             var enrollment = document.getElementById("enrollment").value;
 
         // Check if any field is empty
-    if (!college || !logo || !session || !yearSem || !subject || !teacher || !name || !enrollment) {
+    if (!college || !logo || !session || !yearSem || !subject || !teacher || !name || !enrollment || !branch) {
         alert("Please fill in all fields!!");
         return; 
         // Stop further execution
@@ -57,6 +58,7 @@
             sessionStorage.setItem("teacher", teacher);
             sessionStorage.setItem("name", name);
             sessionStorage.setItem("enrollment", enrollment);
+            sessionStorage.setItem("branch", branch);
 
             if (logo) {
                 var reader = new FileReader();
