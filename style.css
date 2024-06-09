@@ -3,50 +3,29 @@
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-/*I do this later*/
+
 h1 {
     margin : 15px;
-    font-size: 4vw;
-    text-decoration: underline;
-    text-align: center;
-    color: black;
-    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.4);
-    margin-bottom: 2vw;
-    height: 10%;
-    width: 100%;
     
 }
 
 #frontPageFrom {
-    /*display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 20px;
     padding: 10px;
     text-align: center;
-    background-color: rgb(129, 224, 224);*/
-        min-height: 100vh;
-    width: 100vw;
-    /*background-color: #176B87;*/
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 0vw 0 2vw 0 ;
-    background: linear-gradient(144deg, #a4c8e5 0%, #54e0db 30%, #95bfe1  70%, #abeaf3 100%);
+    background-color: rgb(129, 224, 224);
 }
 
 .formelement {
-    height: 45px;
-    padding: 0 16px;
-    font-size: 1.3vw;
-    background: #fff;
-    border-radius: 7px;
-    justify-content: space-between;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    border: none;
-    outline: none;
-    font-weight: 500;
+    margin-top: 10px;
+    padding: 6px;
+    font-size: large;
+    border: 1px solid;
+    border-radius: 6px;
+    background-color: antiquewhite;
 }
 
 .btn-container { 
