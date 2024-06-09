@@ -94,7 +94,7 @@ const districtData = {
         "Sanjivani Institute of Technology and Management",
     ],
     Ballia: [
-        "Government Polytechnic",
+        "Government Girls Polytechnic Ballia",
         "Government Polytechnic Jegirsand",
         "Shri Sahdev Paudhariya Polytechnic College",
         "Smt. Fulehra Smarak College of Polytechnic",
@@ -539,6 +539,7 @@ const districtData = {
         "Dayal Polytechnic College",
         "Dr. Bhimrao Ambedkar Polytechnic",
         "Dr. H. S. Gour University",
+        "Feroze Gandhi Polytechnic Raebareli",
         "G. S. R. M. College of Polytechnic",
         "Government Polytechnic Raebareli",
         "Government Polytechnic, Raebareli",
