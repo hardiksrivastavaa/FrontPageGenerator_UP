@@ -113,23 +113,6 @@ function convertToPDF() {
     font-weight: 500;
     font-style: normal;
     font-size: 1.82vh;
-  }
-  #button{
-      height: 3.4rem;
-      width: 14rem;
-      background: #b5e5f0;
-      font-size: 1.2vh;
-      box-shadow: 0 0 0.5vmax #b4f5fa;
-      border-radius: 3px;
-      margin-left: 3.4rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #000000;
-      text-shadow: 0 .3rem .5rem rgba(0, 0, 0, 0.4);
-      cursor: pointer;
-      margin: 3vh 0;
-      text-transform: uppercase;
   }`;
   document.head.appendChild(style);
   setTimeout( function(){
