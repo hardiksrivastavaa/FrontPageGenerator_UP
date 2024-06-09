@@ -1,45 +1,25 @@
-*, body {
-    margin: 0;
-    padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+ body {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
 
-h1 {
-    margin : 15px;
-    
-}
+ .bg-page {
+     background: linear-gradient(to right, #4f46e5, #9333ea, #ec4899);
+ }
 
-#frontPageFrom {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
-    background-color: rgb(129, 224, 224);
-}
+ .formelement {
+     transition: all 0.3s ease;
+ }
 
-.formelement {
-    margin-top: 10px;
-    padding: 6px;
-    font-size: large;
-    border: 1px solid;
-    border-radius: 6px;
-    background-color: antiquewhite;
-}
+ .formelement:focus {
+     outline: none;
+     border-color: #4f46e5;
+     box-shadow: 0 0 10px #4f46e5;
+ }
 
-.btn-container { 
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+ .btn {
+     transition: all 0.3s ease;
+ }
 
-.btn { 
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-self: center;
-    cursor: pointer;
-    padding: 10px;
-    font-size: larger;
-    border-radius: 10px;
-}
+ .btn:hover {
+     transform: scale(1.05);
+ }
