@@ -10,181 +10,187 @@
 </head>
 
 <body class="bg-page flex items-center justify-center min-h-screen p-4 transition-colors duration-300">
-    <form id="frontPageFrom" class="bg-white p-8 rounded-xl shadow-2xl w-full max-w-lg">
-        <h1 class="text-4xl font-extrabold mb-6 text-center text-gray-800">
-            Front Page Generator
-        </h1>
+    <div class="max-w-4xl w-full">
+        <form id="frontPageFrom" class="bg-white p-8 rounded-xl shadow-2xl">
+            <h1 class="text-4xl font-extrabold mb-6 text-center text-gray-800">
+                Front Page Generator
+            </h1>
 
-        <div class="mb-4">
-            <label for="districts" class="block text-gray-700 mb-2 font-semibold">Select District</label>
-            <select name="districts" id="districts"
-                class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
-                required>
-                <option value="">Select District</option>
-                <option value="Agra">Agra</option>
-                <option value="Aligarh">Aligarh</option>
-                <option value="Allahabad">Allahabad</option>
-                <option value="Ambedkar Nagar">Ambedkar Nagar</option>
-                <option value="Amethi">Amethi</option>
-                <option value="Auraiya">Auraiya</option>
-                <option value="Azamgarh">Azamgarh</option>
-                <option value="Baghpat">Baghpat</option>
-                <option value="Bahraich">Bahraich</option>
-                <option value="Ballia">Ballia</option>
-                <option value="Balrampur">Balrampur</option>
-                <option value="Banda">Banda</option>
-                <option value="Barabanki">Barabanki</option>
-                <option value="Bareilly">Bareilly</option>
-                <option value="Basti">Basti</option>
-                <option value="Bhadohi">Bhadohi</option>
-                <option value="Bijnor">Bijnor</option>
-                <option value="Budaun">Budaun</option>
-                <option value="Bulandshahr">Bulandshahr</option>
-                <option value="Chandauli">Chandauli</option>
-                <option value="Chitrakoot">Chitrakoot</option>
-                <option value="Deoria">Deoria</option>
-                <option value="Etah">Etah</option>
-                <option value="Etawah">Etawah</option>
-                <option value="Faizabad">Faizabad</option>
-                <option value="Farrukhabad">Farrukhabad</option>
-                <option value="Fatehpur">Fatehpur</option>
-                <option value="Firozabad">Firozabad</option>
-                <option value="Gautam Buddha Nagar">Gautam Buddha Nagar</option>
-                <option value="Ghaziabad">Ghaziabad</option>
-                <option value="Ghazipur">Ghazipur</option>
-                <option value="Gonda">Gonda</option>
-                <option value="Gorakhpur">Gorakhpur</option>
-                <option value="Hamirpur">Hamirpur</option>
-                <option value="Hapur">Hapur</option>
-                <option value="Hardoi">Hardoi</option>
-                <option value="Hathras">Hathras</option>
-                <option value="Jalaun">Jalaun</option>
-                <option value="Jaunpur">Jaunpur</option>
-                <option value="Jhansi">Jhansi</option>
-                <option value="Kannauj">Kannauj</option>
-                <option value="Kanpur Dehat">Kanpur Dehat</option>
-                <option value="Kanpur Nagar">Kanpur Nagar</option>
-                <option value="Kasganj">Kasganj</option>
-                <option value="Kaushambi">Kaushambi</option>
-                <option value="Kushinagar">Kushinagar</option>
-                <option value="Lakhimpur Kheri">Lakhimpur Kheri</option>
-                <option value="Lalitpur">Lalitpur</option>
-                <option value="Lucknow">Lucknow</option>
-                <option value="Maharajganj">Maharajganj</option>
-                <option value="Mahoba">Mahoba</option>
-                <option value="Mainpuri">Mainpuri</option>
-                <option value="Mathura">Mathura</option>
-                <option value="Meerut">Meerut</option>
-                <option value="Mirzapur">Mirzapur</option>
-                <option value="Moradabad">Moradabad</option>
-                <option value="Muzaffarnagar">Muzaffarnagar</option>
-                <option value="Pilibhit">Pilibhit</option>
-                <option value="Prayagraj">Prayagraj</option>
-                <option value="Raebareli">Raebareli</option>
-                <option value="Rampur">Rampur</option>
-                <option value="Saharanpur">Saharanpur</option>
-                <option value="Sant Kabir Nagar">Sant Kabir Nagar</option>
-                <option value="Sant Ravidas Nagar (Bhadohi)">Sant Ravidas Nagar (Bhadohi)</option>
-                <option value="Shahjahanpur">Shahjahanpur</option>
-                <option value="Shamli">Shamli</option>
-                <option value="Shravasti">Shravasti</option>
-                <option value="Siddharthnagar">Siddharthnagar</option>
-                <option value="Sitapur">Sitapur</option>
-                <option value="Sonbhadra">Sonbhadra</option>
-                <option value="Sultanpur">Sultanpur</option>
-                <option value="Unnao">Unnao</option>
-                <option value="Varanasi">Varanasi</option>    
-            </select>
-        </div>
+            <div class="mb-4">
+                <label for="districts" class="block text-gray-700 mb-2 font-semibold">Select District</label>
+                <select name="districts" id="districts"
+                    class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
+                    required>
+                    <option value="">Select District</option>
+                    <option value="Agra">Agra</option>
+                    <option value="Aligarh">Aligarh</option>
+                    <option value="Allahabad">Allahabad</option>
+                    <option value="Ambedkar Nagar">Ambedkar Nagar</option>
+                    <option value="Amethi">Amethi</option>
+                    <option value="Auraiya">Auraiya</option>
+                    <option value="Azamgarh">Azamgarh</option>
+                    <option value="Baghpat">Baghpat</option>
+                    <option value="Bahraich">Bahraich</option>
+                    <option value="Ballia">Ballia</option>
+                    <option value="Balrampur">Balrampur</option>
+                    <option value="Banda">Banda</option>
+                    <option value="Barabanki">Barabanki</option>
+                    <option value="Bareilly">Bareilly</option>
+                    <option value="Basti">Basti</option>
+                    <option value="Bhadohi">Bhadohi</option>
+                    <option value="Bijnor">Bijnor</option>
+                    <option value="Budaun">Budaun</option>
+                    <option value="Bulandshahr">Bulandshahr</option>
+                    <option value="Chandauli">Chandauli</option>
+                    <option value="Chitrakoot">Chitrakoot</option>
+                    <option value="Deoria">Deoria</option>
+                    <option value="Etah">Etah</option>
+                    <option value="Etawah">Etawah</option>
+                    <option value="Faizabad">Faizabad</option>
+                    <option value="Farrukhabad">Farrukhabad</option>
+                    <option value="Fatehpur">Fatehpur</option>
+                    <option value="Firozabad">Firozabad</option>
+                    <option value="Gautam Buddha Nagar">Gautam Buddha Nagar</option>
+                    <option value="Ghaziabad">Ghaziabad</option>
+                    <option value="Ghazipur">Ghazipur</option>
+                    <option value="Gonda">Gonda</option>
+                    <option value="Gorakhpur">Gorakhpur</option>
+                    <option value="Hamirpur">Hamirpur</option>
+                    <option value="Hapur">Hapur</option>
+                    <option value="Hardoi">Hardoi</option>
+                    <option value="Hathras">Hathras</option>
+                    <option value="Jalaun">Jalaun</option>
+                    <option value="Jaunpur">Jaunpur</option>
+                    <option value="Jhansi">Jhansi</option>
+                    <option value="Kannauj">Kannauj</option>
+                    <option value="Kanpur Dehat">Kanpur Dehat</option>
+                    <option value="Kanpur Nagar">Kanpur Nagar</option>
+                    <option value="Kasganj">Kasganj</option>
+                    <option value="Kaushambi">Kaushambi</option>
+                    <option value="Kushinagar">Kushinagar</option>
+                    <option value="Lakhimpur Kheri">Lakhimpur Kheri</option>
+                    <option value="Lalitpur">Lalitpur</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Maharajganj">Maharajganj</option>
+                    <option value="Mahoba">Mahoba</option>
+                    <option value="Mainpuri">Mainpuri</option>
+                    <option value="Mathura">Mathura</option>
+                    <option value="Meerut">Meerut</option>
+                    <option value="Mirzapur">Mirzapur</option>
+                    <option value="Moradabad">Moradabad</option>
+                    <option value="Muzaffarnagar">Muzaffarnagar</option>
+                    <option value="Pilibhit">Pilibhit</option>
+                    <option value="Prayagraj">Prayagraj</option>
+                    <option value="Raebareli">Raebareli</option>
+                    <option value="Rampur">Rampur</option>
+                    <option value="Saharanpur">Saharanpur</option>
+                    <option value="Sant Kabir Nagar">Sant Kabir Nagar</option>
+                    <option value="Sant Ravidas Nagar (Bhadohi)">Sant Ravidas Nagar (Bhadohi)</option>
+                    <option value="Shahjahanpur">Shahjahanpur</option>
+                    <option value="Shamli">Shamli</option>
+                    <option value="Shravasti">Shravasti</option>
+                    <option value="Siddharthnagar">Siddharthnagar</option>
+                    <option value="Sitapur">Sitapur</option>
+                    <option value="Sonbhadra">Sonbhadra</option>
+                    <option value="Sultanpur">Sultanpur</option>
+                    <option value="Unnao">Unnao</option>
+                    <option value="Varanasi">Varanasi</option>    
+                    </select>
+            </div>
 
-        <div class="mb-4">
-            <label for="colleges" class="block text-gray-700 mb-2 font-semibold">Select College</label>
-            <select name="college" id="colleges"
-                class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
-                required>
-                <option value="">Select College</option>
-            </select>
-        </div>
-
-        <div class="mb-4">
-            <label for="logoInput" class="block text-gray-700 mb-2 font-semibold">Upload Logo</label>
-            <input type="file" name="logo" id="logoInput"
-                class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
-                accept="image/*" required />
-        </div>
-
-        <div class="mb-4">
-            <label for="session" class="block text-gray-700 mb-2 font-semibold">Select Session</label>
-            <select name="session" id="session"
-                class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
-                required>
-                <option value="">Select Session</option>
-                <option value="2022-23">2022-23</option>
-                <option value="2023-24">2023-24</option>
-                <option value="2024-25">2024-25</option>
-                <option value="2025-26">2025-26</option>
-                <option value="2026-27">2026-27</option>
-                <option value="2027-28">2027-28</option>
-                <option value="2028-29">2028-29</option>
-                <option value="2029-30">2029-30</option>    
-            </select>
-        </div>
-
-        <div class="mb-4">
-            <label for="yearSem" class="block text-gray-700 mb-2 font-semibold">Select Year & Semester</label>
-            <select name="yearSem" id="yearSem"
-                class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
-                required>
-                <option value="">Select Year & Semester</option>
-                <option value="1st Year - 1st Semester">1st Year - 1st Semester</option>
-                <option value="1st Year - 2nd Semester">1st Year - 2nd Semester</option>
-                <option value="2nd Year - 3rd Semester">2nd Year - 3rd Semester</option>
-                <option value="2nd Year - 4th Semester">2nd Year - 4th Semester</option>
-                <option value="3rd Year - 5th Semester">3rd Year - 5th Semester</option>
-                <option value="3rd Year - 6th Semester">3rd Year - 6th Semester</option>
+            <div class="mb-4">
+                <label for="colleges" class="block text-gray-700 mb-2 font-semibold">Select College</label>
+                <select name="college" id="colleges"
+                    class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
+                    required>
+                    <option value="">Select College</option>
                 </select>
-        </div>
+            </div>
+    
+            <div class="mb-4">
+                <label for="logoInput" class="block text-gray-700 mb-2 font-semibold">Upload Logo</label>
+                <input type="file" name="logo" id="logoInput"
+                    class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
+                    accept="image/*" required />
+            </div>
+    
+            <div class="mb-4">
+                <label for="session" class="block text-gray-700 mb-2 font-semibold">Select Session</label>
+                <select name="session" id="session"
+                    class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
+                    required>
+                    <option value="">Select Session</option>
+                    <option value="2022-23">2022-23</option>
+                    <option value="2023-24">2023-24</option>
+                    <option value="2024-25">2024-25</option>
+                    <option value="2025-26">2025-26</option>
+                    <option value="2026-27">2026-27</option>
+                    <option value="2027-28">2027-28</option>
+                    <option value="2028-29">2028-29</option>
+                    <option value="2029-30">2029-30</option>    
+                </select>
+            </div>
+    
+            <div class="mb-4">
+                <label for="yearSem" class="block text-gray-700 mb-2 font-semibold">Select Year & Semester</label>
+                <select name="yearSem" id="yearSem"
+                    class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
+                    required>
+                    <option value="">Select Year & Semester</option>
+                    <option value="1st Year - 1st Semester">1st Year - 1st Semester</option>
+                    <option value="1st Year - 2nd Semester">1st Year - 2nd Semester</option>
+                    <option value="2nd Year - 3rd Semester">2nd Year - 3rd Semester</option>
+                    <option value="2nd Year - 4th Semester">2nd Year - 4th Semester</option>
+                    <option value="3rd Year - 5th Semester">3rd Year - 5th Semester</option>
+                    <option value="3rd Year - 6th Semester">3rd Year - 6th Semester</option>
+                    </select>
+            </div>
+    
+            <div class="mb-4">
+                <label for="branch" class="block text-gray-700 mb-2 font-semibold">Enter Branch Name</label>
+                <input type="text" name="branch" id="branch" placeholder="Enter Branch Name"
+                    class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
+                    required />
+            </div>
+    
+            <div class="mb-4">
+                <label for="subject" class="block text-gray-700 mb-2 font-semibold">Enter Subject Name</label>
+                <input type="text" name="subject" id="subject" placeholder="Enter Subject Name"
+                    class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
+                    required />
+            </div>
+    
+            <div class="mb-4">
+                <label for="teacher" class="block text-gray-700 mb-2 font-semibold">Enter Teacher Name</label>
+                <input type="text" name="teacher" id="teacher" placeholder="Enter Teacher Name"
+                    class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
+                    required />
+            </div>
+    
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 mb-2 font-semibold">Enter Your Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name"
+                    class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
+                    required />
+            </div>
+    
+            <div class="mb-4">
+                <label for="enrollment" class="block text-gray-700 mb-2 font-semibold">Enter Your Enrollment No</label>
+                <input type="text" name="enrollment" id="enrollment" placeholder="Enter Your Enrollment No"
+                    class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500" />
+            </div>
+    
+            <div class="flex flex-col md:flex-row md:justify-between">
+                <button type="button"
+                    class="btn bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg shadow-lg transform hover:scale-105 mb-4 md:mb-0">Generate
+                    Front Page</button>
 
-        <div class="mb-4">
-            <label for="branch" class="block text-gray-700 mb-2 font-semibold">Enter Branch Name</label>
-            <input type="text" name="branch" id="branch" placeholder="Enter Branch Name"
-                class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
-                required />
-        </div>
-
-        <div class="mb-4">
-            <label for="subject" class="block text-gray-700 mb-2 font-semibold">Enter Subject Name</label>
-            <input type="text" name="subject" id="subject" placeholder="Enter Subject Name"
-                class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
-                required />
-        </div>
-
-        <div class="mb-4">
-            <label for="teacher" class="block text-gray-700 mb-2 font-semibold">Enter Teacher Name</label>
-            <input type="text" name="teacher" id="teacher" placeholder="Enter Teacher Name"
-                class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
-                required />
-        </div>
-
-        <div class="mb-4">
-            <label for="name" class="block text-gray-700 mb-2 font-semibold">Enter Your Name</label>
-            <input type="text" name="name" id="name" placeholder="Enter Your Name"
-                class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500"
-                required />
-        </div>
-
-        <div class="mb-4">
-            <label for="enrollment" class="block text-gray-700 mb-2 font-semibold">Enter Your Enrollment No</label>
-            <input type="text" name="enrollment" id="enrollment" placeholder="Enter Your Enrollment No"
-                class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500" />
-        </div>
-
-        <div class="flex justify-between">
-            <button type="button"class="btn bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg shadow-lg transform hover:scale-105" id="generatebtn" onclick="submitForm()">Generate Front Page</button>
-
-            <button type="button" class="btn bg-gray-500 hover:bg-gray-600 text-white py-2 px-6 rounded-lg shadow-lg transform hover:scale-105" id="samplebtn" onclick="samplePdf()">Sample Front Page</button>
-        </div>
-    </form>    
+                <button type="button"
+                    class="btn bg-gray-500 hover:bg-gray-600 text-white py-2 px-6 rounded-lg shadow-lg transform hover:scale-105">Sample
+                    Front Page</button>
+            </div>
+        </form>
+    </div>
 
     <script src="colleges.js"></script>
     <script src="script.js"></script>
