@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Developers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body class="bg-gradient-to-r from-blue-400 to-purple-500 text-gray-800 font-serif">
+    <div class="container mx-auto py-12 px-4">
+        <h1 class="text-4xl text-center font-bold mb-8 text-white">Meet Our Developers</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+            <!-- Developer 1 Card -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+                <div class="p-6">
+                    <img src="hardik.svg" alt="Hardik Srivastava" class="w-32 h-32 rounded-full mx-auto">
+                    <h2 class="text-2xl font-semibold text-center mt-4">Hardik Srivastava</h2>
+                    <p class="text-lg text-center mt-2">Web Developer</p>
+                    <p class="text-md text-center mt-2">2nd year CSE student at Feroze Gandhi Polytechnic, Raebareli</p>
+                    <div class="flex justify-center mt-4">
+                        <!-- Social Icons -->
+                        <a href="https://www.linkedin.com/in/codewithhardik/"
+                            class="text-gray-600 hover:text-blue-500 mr-3 social-link text-lg"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Hardik-Techie/"
+                            class="text-gray-600 hover:text-blue-500 mr-3 social-link text-lg"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/hardikksrivastava/"
+                            class="text-gray-600 hover:text-blue-500 social-link text-lg"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Developer 2 Card -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden card">
+                <div class="p-6">
+                    <img src="siddhi.png" alt="Siddhi Singh" class="w-32 h-32 rounded-full mx-auto">
+                    <h2 class="text-2xl font-semibold text-center mt-4">Siddhi Singh</h2>
+                    <p class="text-lg text-center mt-2">Frontend Developer</p>
+                    <p class="text-md text-center mt-2">2nd year IT student at Government Girls Polytechnic, Ballia</p>
+                    <div class="flex justify-center mt-4">
+                        <!-- Social Icons -->
+                        <a href="https://linkedin.com/in/siddhi-singh07/"
+                            class="text-gray-600 hover:text-blue-500 mr-3 social-link text-lg"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/SiddhiSingh25/"
+                            class="text-gray-600 hover:text-blue-500 mr-3 social-link text-lg"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://instagram.com/siddhyy_here/"
+                            class="text-gray-600 hover:text-blue-500 social-link text-lg"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback Form -->
+        <div class="mt-12 bg-gray-200 rounded-lg shadow-md p-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800 text-center">Submit Your Feedback</h2>
+            <form id="feedbackForm" action="#" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-lg text-gray-800 mb-2">Your Name:</label>
+                    <input type="text" id="name" name="name"
+                        class="border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring focus:border-blue-500 hover:bg-gray-100">
+                </div>
+                <div>
+                    <label for="email" class="block text-lg text-gray-800 mb-2">Your Email:</label>
+                    <input type="email" id="email" name="email"
+                        class="border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring focus:border-blue-500 hover:bg-gray-100">
+                </div>
+                <div>
+                    <label for="message" class="block text-lg text-gray-800 mb-2">Message:</label>
+                    <textarea id="message" name="message" rows="4"
+                        class="border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring focus:border-blue-500 hover:bg-gray-100"></textarea>
+                </div>
+                <button type="button" onclick="submitForm()"
+                    class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Submit</button>
+            </form>
+            <p id="confirmationMessage" class="hidden text-green-600 font-semibold mt-4 text-center">Thank you for your
+                feedback!</p>
+        </div>
+
+        <div class="mt-6 text-center">
+            <a href="index.html"
+                class="inline-flex items-center bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-md shadow">
+                <i class="fas fa-home mr-2"></i>
+                Back to Generate more
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            // Check if all input fields are filled
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (name && email && message) {
+                // Display confirmation message
+                var confirmationMessage = document.getElementById("confirmationMessage");
+                confirmationMessage.classList.remove("hidden");
+
+                // Clear form fields
+                document.getElementById("feedbackForm").reset();
+            } else {
+                alert("Please fill in all fields.");
+            }
+        }
+    </script>
+</body>
+
+</html>
