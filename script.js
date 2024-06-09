@@ -73,6 +73,3 @@
             }
         }
 
-        function samplePdf() {
-            window.open('sample.pdf', '_blank');
-          }
