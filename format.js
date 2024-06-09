@@ -27,6 +27,12 @@ document.getElementById("stdname").textContent = stdname;
 
 var enrollment = sessionStorage.getItem("enrollment");
 document.getElementById("enrollment").textContent = enrollment;
+
+//Back to index.html
+function BackToIndex() {
+    window.location.href = 'index.html'; 
+}
+
 //Convert into pdf
 function convertToPDF() {
     const element = document.getElementById('content');
