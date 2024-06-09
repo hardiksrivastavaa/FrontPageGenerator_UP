@@ -18,17 +18,14 @@ h1 {
 }
 
 #frontPageFrom {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 20px;
     padding: 10px;
     text-align: center;
-    background-color: rgb(129, 224, 224);
-}
-
-.formelement {
-    min-height: 100vh;
+    background-color: rgb(129, 224, 224);*/
+        min-height: 100vh;
     width: 100vw;
     /*background-color: #176B87;*/
     display: flex;
@@ -37,6 +34,19 @@ h1 {
     flex-direction: column;
     padding: 0vw 0 2vw 0 ;
     background: linear-gradient(144deg, #a4c8e5 0%, #54e0db 30%, #95bfe1  70%, #abeaf3 100%);
+}
+
+.formelement {
+    height: 45px;
+    padding: 0 16px;
+    font-size: 1.3vw;
+    background: #fff;
+    border-radius: 7px;
+    justify-content: space-between;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border: none;
+    outline: none;
+    font-weight: 500;
 }
 
 .btn-container { 
