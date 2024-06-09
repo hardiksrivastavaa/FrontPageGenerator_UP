@@ -27,7 +27,7 @@ body{
 }
 #college{
     font-size: 3.2vw;
-    color: #005659;
+    color: darkblue;
     font-family: 'PT Serif', serif;
     margin-bottom: 1.5vw;
 }
@@ -52,13 +52,15 @@ img{
     margin-bottom: 2.2vw;
 }
 #branch{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT Serif', serif;
+    color: red;
     font-weight: 400;
     font-size: 2.2vw;
 }
 #yearSem{
     font-size: 2.2vw;
-    font-family: 'Roboto', sans-serif;
+    color: red;
+    font-family: 'PT Serif', serif;
     font-weight: 400;
 }
 .bottom{
