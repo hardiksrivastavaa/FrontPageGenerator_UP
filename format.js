@@ -127,7 +127,7 @@ function convertToPDF() {
   window.addEventListener('resize', responsive);
     html2pdf()
       .from(element)
-      .save('output.pdf');
+        .save(`${subject} - ${stdname}.pdf`);
       document.getElementById('content').style.border = "none";
       setTimeout(function(){
         document.getElementById('content').style.border = "8px solid #7bd3ff";
