@@ -540,6 +540,7 @@ const districtData = {
         "Dr. Bhimrao Ambedkar Polytechnic",
         "Dr. H. S. Gour University",
         "Feroze Gandhi Polytechnic Raebareli",
+        "Feroze Gandhi Institute Of Engineering And Technology",
         "G. S. R. M. College of Polytechnic",
         "Government Polytechnic Raebareli",
         "Government Polytechnic, Raebareli",
