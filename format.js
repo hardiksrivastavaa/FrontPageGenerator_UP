@@ -75,13 +75,13 @@ function convertToPDF() {
       margin-bottom: 2.4vh;
   }
   #branch{
-      font-family: 'Roboto', sans-serif;
+      font-family: 'PT Serif', serif;
       font-weight: 400;
       font-size: 2.58vh;
   }
   #yearSem{
       font-size: 2.58vh;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'PT Serif', serif;
       font-weight: 400;
   }
   .bottom{
