@@ -111,17 +111,15 @@
           .then(response => response.json())
           .then(data2 => {
             console.log('Success with second URL:', data2);
-            alert("Thank you! Your form is submitted successfully to both URLs.");
+            alert("Thank you for your valuable Feedback!!!");
             window.location.reload();
           })
           .catch(error => {
             console.error('Error with second URL!', error.message);
-            alert("Error submitting to the second URL. Please try again.");
           });
       })
       .catch(error => {
-        console.error('Error with first URL!', error.message);
-        alert("Error submitting to the first URL. Please try again.");
+        console.error('Error with first URL!', error.message);
       });
   });
     </script>
