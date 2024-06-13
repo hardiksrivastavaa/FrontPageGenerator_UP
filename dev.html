@@ -61,27 +61,24 @@
         <!-- Feedback Form -->
         <div class="mt-12 bg-gray-200 rounded-lg shadow-md p-8">
             <h2 class="text-2xl font-semibold mb-4 text-gray-800 text-center">Submit Your Feedback</h2>
-            <form id="feedbackForm" action="#" class="space-y-4">
+            <form id="feedbackForm" action="#" name="feedbackForm" class="space-y-4">
                 <div>
                     <label for="name" class="block text-lg text-gray-800 mb-2">Your Name:</label>
                     <input type="text" id="name" name="name"
-                        class="border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring focus:border-blue-500 hover:bg-gray-100">
+                        class="border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring focus:border-blue-500 hover:bg-gray-100" required>
                 </div>
                 <div>
                     <label for="email" class="block text-lg text-gray-800 mb-2">Your Email:</label>
                     <input type="email" id="email" name="email"
-                        class="border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring focus:border-blue-500 hover:bg-gray-100">
+                        class="border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring focus:border-blue-500 hover:bg-gray-100" required>
                 </div>
                 <div>
                     <label for="message" class="block text-lg text-gray-800 mb-2">Message:</label>
                     <textarea id="message" name="message" rows="4"
-                        class="border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring focus:border-blue-500 hover:bg-gray-100"></textarea>
+                        class="border-gray-300 rounded-md p-2 w-full focus:outline-none focus:ring focus:border-blue-500 hover:bg-gray-100" required></textarea>
                 </div>
-                <button type="button" onclick="submitForm()"
-                    class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Submit</button>
+                <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Submit</button>
             </form>
-            <p id="confirmationMessage" class="hidden text-green-600 font-semibold mt-4 text-center">Thank you for your
-                feedback!</p>
         </div>
 
         <div class="mt-6 text-center">
@@ -93,24 +90,40 @@
         </div>
     </div>
 
-    <script>
-        function submitForm() {
-            // Check if all input fields are filled
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
 
-            if (name && email && message) {
-                // Display confirmation message
-                var confirmationMessage = document.getElementById("confirmationMessage");
-                confirmationMessage.classList.remove("hidden");
+<script>
+  const scriptURL1 = 'URL_FOR_SHEET_1';
+  const scriptURL2 = 'URL_FOR_SHEET_2';
+  const form = document.forms['feedbackForm'];
 
-                // Clear form fields
-                document.getElementById("feedbackForm").reset();
-            } else {
-                alert("Please fill in all fields.");
-            }
-        }
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    // Send data to the first URL
+    fetch(scriptURL1, { method: 'POST', body: formData })
+      .then(response => response.json())
+      .then(data1 => {
+        console.log('Success with first URL:', data1);
+
+        // Send data to the second URL
+        fetch(scriptURL2, { method: 'POST', body: formData })
+          .then(response => response.json())
+          .then(data2 => {
+            console.log('Success with second URL:', data2);
+            alert("Thank you! Your form is submitted successfully to both URLs.");
+            window.location.reload();
+          })
+          .catch(error => {
+            console.error('Error with second URL!', error.message);
+            alert("Error submitting to the second URL. Please try again.");
+          });
+      })
+      .catch(error => {
+        console.error('Error with first URL!', error.message);
+        alert("Error submitting to the first URL. Please try again.");
+      });
+  });
     </script>
 </body>
 
