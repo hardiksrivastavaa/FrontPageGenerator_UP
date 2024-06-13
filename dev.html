@@ -92,37 +92,26 @@
 
 
 <script>
-  const scriptURL1 = 'https://script.google.com/macros/s/AKfycbxMiwH5191Ra6H-0HVglcobT7BxPGeHofuZsicBt1umbXAfCORFhsXKVoiD_QmIcT1W/exec';
-  const scriptURL2 = 'https://script.google.com/macros/s/AKfycbw9Eo-YTcX4ouM-rQoZoc9OE8NbdlANXnZYNVJi6GrOpKOqww036mt0sl26J0B4z_xy/exec';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxMiwH5191Ra6H-0HVglcobT7BxPGeHofuZsicBt1umbXAfCORFhsXKVoiD_QmIcT1W/exec';
   const form = document.forms['feedbackForm'];
 
   form.addEventListener('submit', e => {
     e.preventDefault();
     const formData = new FormData(form);
 
-    // Send data to the first URL
-    fetch(scriptURL1, { method: 'POST', body: formData })
+    // Send data to the URL
+    fetch(scriptURL, { method: 'POST', body: formData })
       .then(response => response.json())
-      .then(data1 => {
-        console.log('Success with first URL:', data1);
-
-        // Send data to the second URL
-        fetch(scriptURL2, { method: 'POST', body: formData })
-          .then(response => response.json())
-          .then(data2 => {
-            console.log('Success with second URL:', data2);
-            alert("Thank you for your valuable Feedback!!!");
-            window.location.reload();
-          })
-          .catch(error => {
-            console.error('Error with second URL!', error.message);
-          });
+      .then(data => {
+        console.log('Success:', data);
+        alert("Thank you for your valuable Feedback!!!");
+        window.location.reload();
       })
       .catch(error => {
-        console.error('Error with first URL!', error.message);
+        console.error('Error:', error.message);
       });
   });
-    </script>
+</script>
 </body>
 
 </html>
