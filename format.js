@@ -42,77 +42,48 @@ function convertToPDF() {
     let style = document.createElement('style');
     style.textContent =`
     .FrontPage{
-      width: 793px;
-      height: 1122px;
+      width:793.92px;
+      height: 1122.24px;
       background-color: #fff;
       color: #111;
       text-align: center;
       padding: 3.2vh 0;
       position: relative;
-      border: 8px solid #7bd3ff;
+      border: 3px solid #010101;
   }
   #college{
-      font-size: 3.82vh;
+      font-size: 5vh;
       margin-bottom: 1.8vh;
+      width:95%;
   }
   #logo{
-      height: 24.3vh;
+      height: 32vh;
       margin-bottom: 2vh;
   }
-  img{
-      object-fit: contain;
-      object-position: center;
-  }
   #session{
-      font-family: 'PT Serif', serif;
-      font-size: 2.4vh;
+      font-size: 3vh;
       margin-bottom: 1.15vh;
   }
   #subject{
-      font-family: 'PT Serif', serif;
-      font-size: 3.6vh;
-      color: #005659;
+      font-size: 3.8vh;
       margin-bottom: 2.4vh;
   }
   #branch{
-      font-family: 'PT Serif', serif;
-      font-weight: 400;
-      font-size: 2.58vh;
+      font-size:3vh;
+      width:98%;
   }
   #yearSem{
-      font-size: 2.58vh;
-      font-family: 'PT Serif', serif;
-      font-weight: 400;
+      font-size: 3vh;
   }
   .bottom{
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding:0 2vh;
-      margin-top: 13.5vh;
-  }
-  .left{
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      height: 9vh;
-     font-family: Arial, Helvetica, sans-serif;
-     font-weight: 400;
-  }
-  .right{
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      height: 9vh;
-      justify-content: flex-start;
-      gap: 0vh;
-      
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        margin-top: 13.5vh;
   }
   .bottom h1{
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.82vh;
+    font-size: 2.4vh;
   }`;
   document.head.appendChild(style);
   setTimeout( function(){
@@ -130,9 +101,7 @@ function convertToPDF() {
         .save(`${subject} - ${stdname}.pdf`);
       document.getElementById('content').style.border = "none";
       setTimeout(function(){
-        document.getElementById('content').style.border = "8px solid #7bd3ff";
+        document.getElementById('content').style.border = "3px solid #010101;";
       },1);
-      document.querySelector(".FrontPage").style.height = "1122px";
-      document.querySelector(".FrontPage").style.width = "793px";
 }
 
