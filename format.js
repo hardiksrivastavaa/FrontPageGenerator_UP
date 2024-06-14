@@ -86,12 +86,12 @@ function convertToPDF() {
     font-size: 2.4vh;
   }`;
   document.head.appendChild(style);
-  setTimeout( function(){
+  /*setTimeout( function(){
     let tag = document.querySelector("style");
     tag.remove();
     document.querySelector(".FrontPage").style.height = "90vh";
       document.querySelector(".FrontPage").style.width = "100vw";
-  },1)
+  },1)*/
         } 
       }
       responsive();
