@@ -55,6 +55,7 @@ function convertToPDF() {
       font-size: 4vh;
       margin-bottom: 1.8vh;
       width:95%;
+      color: #628ae9;
   }
   #logo{
       height: 32vh;
