@@ -24,6 +24,7 @@ body{
     padding: 3vw 0;
     position: relative;
     border: 8px solid #7bd3ff;
+    position: relative;
 }
 #college{
     font-size: 3.2vw;
@@ -67,8 +68,9 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:0 2vw;
+    width: 95%;
     margin-top: 10vw;
+    position: sticky;
 }
 .left{
     display: flex;
@@ -189,8 +191,9 @@ img{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding:0 2vh;
+        width: 95%;
         margin-top: 13.5vh;
+        position: sticky;
     }
     .left{
         display: flex;
