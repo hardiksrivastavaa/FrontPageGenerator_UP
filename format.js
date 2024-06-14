@@ -52,7 +52,7 @@ function convertToPDF() {
       border: 3px solid #010101;
   }
   #college{
-      font-size: 5vh;
+      font-size: 4vh;
       margin-bottom: 1.8vh;
       width:95%;
   }
@@ -103,5 +103,7 @@ function convertToPDF() {
       setTimeout(function(){
         document.getElementById('content').style.border = "3px solid #010101;";
       },1);
+      document.querySelector(".FrontPage").style.width = "793.92px";
+      document.querySelector(".FrontPage").style.width = "1122.24px";
 }
 
