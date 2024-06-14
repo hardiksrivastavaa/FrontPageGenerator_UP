@@ -96,13 +96,13 @@ function convertToPDF() {
       }
       responsive();
   window.addEventListener('resize', responsive);
-    html2pdf()
-      .from(element)
-        .save(`${subject} - ${stdname}.pdf`);
+    html2pdf().set({
+    margin: 0, 
+    filename: `${subject} - ${stdname}.pdf`,
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' } // Custom size
+}).from(element).save();
       document.getElementById('content').style.border = "none";
-      /*setTimeout(function(){
-        document.getElementById('content').style.border = "3px solid #010101;";
-      },1);*/
       document.querySelector(".FrontPage").style.width = "793.92px";
       document.querySelector(".FrontPage").style.height = "1122.24px";
 }
