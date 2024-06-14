@@ -100,9 +100,9 @@ function convertToPDF() {
       .from(element)
         .save(`${subject} - ${stdname}.pdf`);
       document.getElementById('content').style.border = "none";
-      setTimeout(function(){
+      /*setTimeout(function(){
         document.getElementById('content').style.border = "3px solid #010101;";
-      },1);
+      },1);*/
       document.querySelector(".FrontPage").style.width = "793.92px";
       document.querySelector(".FrontPage").style.width = "1122.24px";
 }
