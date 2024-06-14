@@ -25,6 +25,10 @@ body{
     position: relative;
     border: 8px solid #7bd3ff;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 #college{
     font-size: 3.2vw;
