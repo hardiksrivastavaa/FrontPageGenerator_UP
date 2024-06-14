@@ -104,6 +104,6 @@ function convertToPDF() {
         document.getElementById('content').style.border = "3px solid #010101;";
       },1);*/
       document.querySelector(".FrontPage").style.width = "793.92px";
-      document.querySelector(".FrontPage").style.width = "1122.24px";
+      document.querySelector(".FrontPage").style.height = "1122.24px";
 }
 
