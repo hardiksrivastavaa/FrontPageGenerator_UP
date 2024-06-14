@@ -30,6 +30,13 @@ body{
     justify-content: space-around;
     flex-direction: column;
 }
+.bigCon1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}
 #college{
     font-size: 3.2vw;
     color: #628ae9;
