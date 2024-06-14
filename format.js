@@ -71,7 +71,6 @@ function convertToPDF() {
   }
   #branch{
       font-size:3vh;
-      width:98%;
   }
   #yearSem{
       font-size: 3vh;
