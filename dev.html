@@ -5,24 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Developers</title>
+    <!-- Import Tailwind CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- Import Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 
 <body class="bg-gradient-to-r from-blue-400 to-purple-500 text-gray-800 font-serif">
     <div class="container mx-auto py-12 px-4">
+        <!-- Main Heading -->
         <h1 class="text-4xl text-center font-bold mb-8 text-white">Meet Our Developers</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
             <!-- Developer 1 Card -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden card">
                 <div class="p-6">
+                    <!-- Developer 1 Image -->
                     <img src="hardik.svg" alt="Hardik Srivastava" class="w-32 h-32 rounded-full mx-auto">
+                    <!-- Developer 1 Name -->
                     <h2 class="text-2xl font-semibold text-center mt-4">Hardik Srivastava</h2>
+                    <!-- Developer 1 Role -->
                     <p class="text-lg text-center mt-2">Web Developer</p>
+                    <!-- Developer 1 Details -->
                     <p class="text-md text-center mt-2">2nd year CSE student at Feroze Gandhi Polytechnic, Raebareli</p>
                     <div class="flex justify-center mt-4">
-                        <!-- Social Icons -->
+                        <!-- Developer 1 Social Icons -->
                         <a href="https://www.linkedin.com/in/codewithhardik/"
                             class="text-gray-600 hover:text-blue-500 mr-3 social-link text-lg"><i
                                 class="fab fa-linkedin"></i></a>
@@ -38,12 +44,16 @@
             <!-- Developer 2 Card -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden card">
                 <div class="p-6">
+                    <!-- Developer 2 Image -->
                     <img src="siddhi.png" alt="Siddhi Singh" class="w-32 h-32 rounded-full mx-auto">
+                    <!-- Developer 2 Name -->
                     <h2 class="text-2xl font-semibold text-center mt-4">Siddhi Singh</h2>
+                    <!-- Developer 2 Role -->
                     <p class="text-lg text-center mt-2">Web Developer</p>
+                    <!-- Developer 2 Details -->
                     <p class="text-md text-center mt-2">2nd year IT student at Government Girls Polytechnic, Ballia</p>
                     <div class="flex justify-center mt-4">
-                        <!-- Social Icons -->
+                        <!-- Developer 2 Social Icons -->
                         <a href="https://linkedin.com/in/siddhi-singh07/"
                             class="text-gray-600 hover:text-blue-500 mr-3 social-link text-lg"><i
                                 class="fab fa-linkedin"></i></a>
@@ -79,11 +89,13 @@
                 </div>
                 <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600" onclick="submitForm()">Submit</button>
             </form>
-                <p id="confirmationMessage" class="hidden text-green-600 font-semibold mt-4 text-center">
+            <!-- Confirmation Message -->
+            <p id="confirmationMessage" class="hidden text-green-600 font-semibold mt-4 text-center">
                 Thank you for your valuable feedback!
             </p>
         </div>
 
+        <!-- Back to Home Button -->
         <div class="mt-6 text-center">
             <a href="index.html"
                 class="inline-flex items-center bg-gray-300 hover:bg-gray-400 text-gray-800 font-semibold py-2 px-4 rounded-md shadow">
@@ -93,10 +105,9 @@
         </div>
     </div>
 
-
-<script>
-
-            function submitForm() {
+    <script>
+        // Function to display confirmation message on form submission
+        function submitForm() {
             var name = document.getElementById("name").value;
             var email = document.getElementById("email").value;
             var message = document.getElementById("message").value;
@@ -107,9 +118,12 @@
                 confirmationMessage.classList.remove("hidden");
             }
         };
-       const scriptURL = 'https://script.google.com/macros/s/AKfycbxMiwH5191Ra6H-0HVglcobT7BxPGeHofuZsicBt1umbXAfCORFhsXKVoiD_QmIcT1W/exec';
-       const form = document.forms["feedbackForm"];
 
+        // URL for Google Script to handle form submission
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxMiwH5191Ra6H-0HVglcobT7BxPGeHofuZsicBt1umbXAfCORFhsXKVoiD_QmIcT1W/exec';
+        const form = document.forms["feedbackForm"];
+
+        // Event listener to handle form submission
         form.addEventListener("submit", (e) => {
             e.preventDefault();
             fetch(scriptURL, { method: "POST", body: new FormData(form) })
@@ -121,12 +135,7 @@
                 })
                 .catch((error) => console.error("Error!", error.message));
         });
-    
-
-    
-  
-  
-</script>
+    </script>
 </body>
 
 </html>
