@@ -2,21 +2,33 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set and viewport configuration -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Page title and favicon -->
     <title>Front Page Generator</title>
-        <link rel="shortcut icon" href="fpg.png" type="image/x-icon">
+    <link rel="shortcut icon" href="fpg.png" type="image/x-icon">
+    
+    <!-- Tailwind CSS for styling -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-page flex items-center justify-center min-h-screen p-3 transition-colors duration-300">
+    <!-- Container for the form -->
     <div class="max-w-4xl w-full">
+        <!-- Form for generating the front page -->
         <form id="frontPageFrom" class="bg-white p-8 rounded-xl shadow-2xl">
-             <h1 class="text-2xl font-extrabold mb-3 mt-2 text-center text-blue-800">
+            <!-- Form title -->
+            <h1 class="text-2xl font-extrabold mb-3 mt-2 text-center text-blue-800">
                 Front Page Generator
-            </h1><hr>
+            </h1>
+            <hr>
 
+            <!-- District selection dropdown -->
             <div class="mb-4">
                 <label for="districts" class="block text-gray-700 mt-3 mb-2 font-semibold">District</label>
                 <select name="districts" id="districts"
@@ -99,6 +111,7 @@
                 </select>
             </div>
 
+            <!-- College selection dropdown -->
             <div class="mb-4">
                 <label for="colleges" class="block text-gray-700 mb-2 font-semibold">College</label>
                 <select name="college" id="colleges"
@@ -108,6 +121,7 @@
                 </select>
             </div>
 
+            <!-- File input for college logo -->
             <div class="mb-4">
                 <label for="logoInput" class="block text-gray-700 mb-2 font-semibold">College Logo</label>
                 <input type="file" name="logo" id="logoInput"
@@ -115,6 +129,7 @@
                     accept="image/*" required />
             </div>
 
+            <!-- Session selection dropdown -->
             <div class="mb-4">
                 <label for="session" class="block text-gray-700 mb-2 font-semibold">Session</label>
                 <select name="session" id="session"
@@ -132,6 +147,7 @@
                 </select>
             </div>
 
+            <!-- Year and Semester selection dropdown -->
             <div class="mb-4">
                 <label for="yearSem" class="block text-gray-700 mb-2 font-semibold">Year & Semester</label>
                 <select name="yearSem" id="yearSem"
@@ -147,6 +163,7 @@
                 </select>
             </div>
 
+            <!-- Branch input -->
             <div class="mb-4">
                 <label for="branch" class="block text-gray-700 mb-2 font-semibold">Branch</label>
                 <input type="text" name="branch" id="branch" placeholder="Enter Branch Name"
@@ -154,6 +171,7 @@
                     required />
             </div>
 
+            <!-- Subject input -->
             <div class="mb-4">
                 <label for="subject" class="block text-gray-700 mb-2 font-semibold">Subject</label>
                 <input type="text" name="subject" id="subject" placeholder="Enter Subject Name"
@@ -161,6 +179,7 @@
                     required />
             </div>
 
+            <!-- Teacher input -->
             <div class="mb-4">
                 <label for="teacher" class="block text-gray-700 mb-2 font-semibold">Teacher</label>
                 <input type="text" name="teacher" id="teacher" placeholder="Enter Teacher Name"
@@ -168,6 +187,7 @@
                     required />
             </div>
 
+            <!-- Name input -->
             <div class="mb-4">
                 <label for="name" class="block text-gray-700 mb-2 font-semibold">Name</label>
                 <input type="text" name="name" id="name" placeholder="Enter Your Name"
@@ -175,32 +195,32 @@
                     required />
             </div>
 
+            <!-- Enrollment number input -->
             <div class="mb-4">
                 <label for="enrollment" class="block text-gray-700 mb-2 font-semibold">Enrollment Number</label>
                 <input type="text" name="enrollment" id="enrollment" placeholder="Enter Your Enrollment Number"
                     class="formelement block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring focus:ring-indigo-300 focus:border-indigo-500" />
             </div>
 
+            <!-- Buttons for form submission and reset -->
             <div class="flex flex-col md:flex-row md:justify-evenly">
-
                 <button type="button"
                     class="btn bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg shadow-lg transform hover:scale-105 mb-4 md:mb-0"
                     onclick="submitForm()">Generate Front Page</button>
 
                 <button type="reset"
                     class="btn bg-gray-500 hover:bg-gray-600 text-white py-2 px-6 rounded-lg shadow-lg transform hover:scale-105">Reset</button>
-
             </div>
 
+            <!-- Footer section -->
             <footer class="mt-8 text-center text-gray-600 border-t border-gray-300 pt-4 text-sm">
                 <p>&copy; 2024 Team FPG. All rights reserved.</p>
                 <p><a href="dev.html" class="text-blue-500">See Developers</a></p>
             </footer>
         </form>
-
     </div>
 
-
+    <!-- JavaScript files -->
     <script src="colleges.js"></script>
     <script src="script.js"></script>
 </body>
