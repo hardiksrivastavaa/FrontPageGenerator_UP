@@ -23,23 +23,11 @@ body{
     text-align: center;
     padding: 3vw 0;
     position: relative;
-    border: 8px solid #010101;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-}
-.bigCon1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+    border: 8px solid #7bd3ff;
 }
 #college{
     font-size: 3.2vw;
-    color: #628ae9;
+    color: darkblue;
     font-family: 'PT Serif', serif;
     margin-bottom: 1.5vw;
 }
@@ -60,18 +48,18 @@ img{
 #subject{
     font-family: 'PT Serif', serif;
     font-size: 3vw;
-    color: #628ae9;
+    color: #005659;
     margin-bottom: 2.2vw;
 }
 #branch{
     font-family: 'PT Serif', serif;
-    color: #ff1a1a;
+    color: red;
     font-weight: 400;
     font-size: 2.2vw;
 }
 #yearSem{
     font-size: 2.2vw;
-    color: #ff1a1a;
+    color: red;
     font-family: 'PT Serif', serif;
     font-weight: 400;
 }
@@ -79,9 +67,8 @@ img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 95%;
+    padding:0 2vw;
     margin-top: 10vw;
-    position: sticky;
 }
 .left{
     display: flex;
@@ -163,9 +150,7 @@ img{
     .FrontPage{
         height: 90vh;
         width: 100vw;
-        padding: 2vh 0;
-        border: 3px solid #010101;
-
+        padding: 3.2vh 0;
     }
     #college{
         font-size: 3.1vh;
@@ -187,6 +172,7 @@ img{
     #subject{
         font-family: 'PT Serif', serif;
         font-size: 2.8vh;
+        color: #005659;
         margin-bottom: 2.4vh;
     }
     #branch{
@@ -203,9 +189,8 @@ img{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 95%;
+        padding:0 2vh;
         margin-top: 13.5vh;
-        position: sticky;
     }
     .left{
         display: flex;
