@@ -71,7 +71,7 @@ function convertToPDF() {
   #subject{
       font-family: 'PT Serif', serif;
       font-size: 3.6vh;
-      color: #005659;
+      color: darkblue;
       margin-bottom: 2.4vh;
   }
   #branch{
