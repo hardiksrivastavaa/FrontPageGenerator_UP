@@ -5,7 +5,7 @@ var logo = sessionStorage.getItem("logo");
 if (logo) {
     document.getElementById("logo").src = logo;
 } else {
-    document.getElementById("logo").src = "logo.jpeg";}
+    document.getElementById("logo").src = "img/logo.jpeg";}
 
 var session = sessionStorage.getItem("session");
 document.getElementById("session").textContent = `Session : ${session}`;
