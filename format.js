@@ -42,68 +42,97 @@ function convertToPDF() {
     let style = document.createElement('style');
     style.textContent =`
     .FrontPage{
-      width:793.92px;
-      height: 1122.24px;
+      width: 793px;
+      height: 1122px;
       background-color: #fff;
       color: #111;
       text-align: center;
       padding: 3.2vh 0;
       position: relative;
-      border: 3px solid #010101;
+      border: 8px solid #7bd3ff;
   }
   #college{
-      font-size: 4vh;
+      font-size: 3.82vh;
       margin-bottom: 1.8vh;
-      width:95%;
-      color: #628ae9;
   }
   #logo{
-      height: 32vh;
+      height: 24.3vh;
       margin-bottom: 2vh;
   }
+  img{
+      object-fit: contain;
+      object-position: center;
+  }
   #session{
-      font-size: 3vh;
+      font-family: 'PT Serif', serif;
+      font-size: 2.4vh;
       margin-bottom: 1.15vh;
   }
   #subject{
-      font-size: 3.8vh;
+      font-family: 'PT Serif', serif;
+      font-size: 3.6vh;
+      color: #005659;
       margin-bottom: 2.4vh;
   }
   #branch{
-      font-size:3vh;
+      font-family: 'PT Serif', serif;
+      font-weight: 400;
+      font-size: 2.58vh;
   }
   #yearSem{
-      font-size: 3vh;
+      font-size: 2.58vh;
+      font-family: 'PT Serif', serif;
+      font-weight: 400;
   }
   .bottom{
       display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 95%;
-        margin-top: 13.5vh;
+      align-items: center;
+      justify-content: space-between;
+      padding:0 2vh;
+      margin-top: 13.5vh;
+  }
+  .left{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      height: 9vh;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 400;
+  }
+  .right{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 9vh;
+      justify-content: flex-start;
+      gap: 0vh;
+      
   }
   .bottom h1{
-    font-size: 2.4vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.82vh;
   }`;
   document.head.appendChild(style);
-  /*setTimeout( function(){
+  setTimeout( function(){
     let tag = document.querySelector("style");
     tag.remove();
     document.querySelector(".FrontPage").style.height = "90vh";
       document.querySelector(".FrontPage").style.width = "100vw";
-  },1)*/
+  },1)
         } 
       }
       responsive();
   window.addEventListener('resize', responsive);
-    html2pdf().set({
-    margin: 0, 
-    filename: `${subject} - ${stdname}.pdf`,
-    html2canvas: { scale: 2 },
-    jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' } // Custom size
-}).from(element).save();
+    html2pdf()
+      .from(element)
+        .save(`${subject} - ${stdname}.pdf`);
       document.getElementById('content').style.border = "none";
-      document.querySelector(".FrontPage").style.width = "793.92px";
-      document.querySelector(".FrontPage").style.height = "1122.24px";
+      setTimeout(function(){
+        document.getElementById('content').style.border = "8px solid #7bd3ff";
+      },1);
+      document.querySelector(".FrontPage").style.height = "1122px";
+      document.querySelector(".FrontPage").style.width = "793px";
 }
 
