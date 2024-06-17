@@ -34,7 +34,8 @@ function BackToIndex() {
 }
 
 //Convert into pdf
-function convertToPDF() {
+
+ function convertToPDF() {
     const element = document.getElementById('content');
     var screenWidth = window.innerWidth || document.documentElement.clientWidth;
     const responsive = () => {
@@ -42,14 +43,11 @@ function convertToPDF() {
     let style = document.createElement('style');
     style.textContent =`
     .FrontPage{
-      width: 793px;
-      height: 1122px;
-      background-color: #fff;
-      color: #111;
+      width:793.92px;
+      height: 1122.24px;
       text-align: center;
       padding: 3.2vh 0;
       position: relative;
-      border: 8px solid #7bd3ff;
   }
   #college{
       font-size: 3.82vh;
@@ -71,7 +69,6 @@ function convertToPDF() {
   #subject{
       font-family: 'PT Serif', serif;
       font-size: 3.6vh;
-      color: darkblue;
       margin-bottom: 2.4vh;
   }
   #branch{
@@ -89,7 +86,8 @@ function convertToPDF() {
       align-items: center;
       justify-content: space-between;
       padding:0 2vh;
-      margin-top: 13.5vh;
+      width:100%;
+     /* margin-top: 13.5vh;*/
   }
   .left{
       display: flex;
@@ -130,9 +128,9 @@ function convertToPDF() {
         .save(`${subject} - ${stdname}.pdf`);
       document.getElementById('content').style.border = "none";
       setTimeout(function(){
-        document.getElementById('content').style.border = "8px solid #7bd3ff";
+        document.getElementById('content').style.border = "3px solid #111111";
       },1);
-      document.querySelector(".FrontPage").style.height = "1122px";
-      document.querySelector(".FrontPage").style.width = "793px";
+      document.querySelector(".FrontPage").style.height = "1122.24px";
+      document.querySelector(".FrontPage").style.width = "793.92px";
 }
 
