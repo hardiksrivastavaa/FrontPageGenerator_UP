@@ -35,7 +35,6 @@ function BackToIndex() {
 
 //Convert into pdf
 
- 
 function convertToPDF() {
     const element = document.getElementById('content');
     var screenWidth = window.innerWidth || document.documentElement.clientWidth;
@@ -127,15 +126,20 @@ function convertToPDF() {
     responsive();
     window.addEventListener('resize', responsive);
 
-    html2pdf()
-        .from(element)
-        .set({
-            margin: 0,
-            filename: `${subject} - ${stdname}.pdf`,
-            html2canvas: { scale: 2 },
-            jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
-        })
-        .save();
+    const opt = {
+        margin: 0,
+        filename: `${subject} - ${stdname}.pdf`,
+        image: { type: 'jpeg', quality: 1.0 },
+        html2canvas: { scale: 3 },
+        jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf().from(element).set(opt).toPdf().get('pdf').then(function (pdf) {
+        let totalPages = pdf.internal.getNumberOfPages();
+        for (let i = totalPages; i > 1; i--) {
+            pdf.deletePage(i);
+        }
+    }).save();
 
     document.getElementById('content').style.border = "none";
 
@@ -145,3 +149,7 @@ function convertToPDF() {
         document.querySelector(".FrontPage").style.width = "793.92px";
     }, 1);
 }
+
+ 
+
+                
