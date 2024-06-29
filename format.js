@@ -42,8 +42,8 @@ function convertToPDF() {
     let style = document.createElement('style');
     style.textContent =`
     .FrontPage{
-      width: 793px;
-      height: 1122px;
+      width:793.92px;
+      height: 1122.24px;
       text-align: center;
       padding: 3.2vh 0;
       position: relative;
@@ -129,7 +129,7 @@ function convertToPDF() {
       setTimeout(function(){
         document.getElementById('content').style.border = "3px solid #111111";
       },1);
-      document.querySelector(".FrontPage").style.height = "1122px";
-      document.querySelector(".FrontPage").style.width = "793px";
+      document.querySelector(".FrontPage").style.height = "1122.24px";
+      document.querySelector(".FrontPage").style.width = "793.92px";
 }
 

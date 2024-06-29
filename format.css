@@ -74,6 +74,7 @@ img{
     justify-content: space-between;
     padding:0 2vw;
    /* margin-top: 10vw;*/
+   width: 100%;
 }
 .left{
     display: flex;
