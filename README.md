@@ -45,9 +45,9 @@ A: Currently, the format of the front page is predefined. However, we may consid
 This tool was developed by:
 
 - **Hardik Srivastava**: Web Developer, 2nd year CSE student at Feroze Gandhi Polytechnic, Raebareli.
-  - [LinkedIn](https://www.linkedin.com/in/codewithhardik/) <i class="fab fa-linkedin"></i>
-  - [GitHub](https://github.com/Hardik-Techie/) <i class="fab fa-github"></i>
-  - [Instagram](https://www.instagram.com/hardikksrivastava/) <i class="fab fa-instagram"></i>
+  - [LinkedIn](https://www.linkedin.com/in/hardiksrivastavaa/) <i class="fab fa-linkedin"></i>
+  - [GitHub](https://github.com/hardiksrivastavaa/) <i class="fab fa-github"></i>
+  - [Instagram](https://www.instagram.com/hardiksrivastavaaa/) <i class="fab fa-instagram"></i>
 
 - **Siddhi Singh**: Web Developer, 2nd year IT student at Government Girls Polytechnic, Ballia.
   - [LinkedIn](https://linkedin.com/in/siddhi-singh07/) <i class="fab fa-linkedin"></i>
@@ -60,4 +60,4 @@ We welcome your feedback! If you have any suggestions or encounter any issues wh
 
 ## Live Link
 
-You can access the live version of Front Page Generator [here](https://hardik-techie.github.io/Front-Page-Creator/).
+You can access the live version of Front Page Generator [here](https://hardiksrivastavaa.github.io/Front-Page-Creator/).
