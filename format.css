@@ -21,7 +21,7 @@ body{
     background-color: #fff;
     color: #111;
     text-align: center;
-    padding: 3vw 0;
+    padding: 3.5vw 1vw;
     position: relative;
     border: 5px solid #000000;
     display: flex;
@@ -31,7 +31,8 @@ body{
 }
 #college{
     font-size: 3.2vw;
-    color:#699bed;
+    /*color:#699bed;*/
+    color:#2e5496 ;
     font-family: 'PT Serif', serif;
     margin-bottom: 1.5vw;
 }
@@ -53,18 +54,18 @@ img{
 #subject{
     font-family: 'PT Serif', serif;
     font-size: 3vw;
-    color: #699bed;
+    color: #2e5496;
     margin-bottom: 2.2vw;
 }
 #branch{
     font-family: 'PT Serif', serif;
-    color: #ff2c2c;
+    color: #ff1241;
     font-weight: 400;
     font-size: 2.2vw;
 }
 #yearSem{
     font-size: 2.2vw;
-    color: #ff2c2c;
+    color: #ff1241;
     font-family: 'PT Serif', serif;
     font-weight: 400;
 }

@@ -46,7 +46,7 @@ function BackToIndex() {
       width:793.92px;
       height: 1122.24px;
       text-align: center;
-      padding: 3.7vh 0;
+      padding: 3.7vh 1vh;
       position: relative;
   }
   #college{
