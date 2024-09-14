@@ -60,4 +60,4 @@ We welcome your feedback! If you have any suggestions or encounter any issues wh
 
 ## Live Link
 
-You can access the live version of Front Page Generator [here](https://hardiksrivastavaa.github.io/Front-Page-Creator/).
+You can access the live version of Front Page Generator [here](https://fpg24.vercel.app/).
